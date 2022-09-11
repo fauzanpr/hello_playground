@@ -99,7 +99,10 @@ class Tugas2 extends StatelessWidget {
                   children: const [
                     Text(
                       "BERITA TERBARU",
-                      style: TextStyle(fontSize: 16),
+                      style: TextStyle(
+                        fontSize: 16,
+                        fontWeight: FontWeight.bold,
+                      ),
                     ),
                     Text(
                       "PERTANDINGAN HARI INI",
@@ -116,13 +119,12 @@ class Tugas2 extends StatelessWidget {
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
                     const Image(
-                      image: NetworkImage(
-                          "https://cdns.klimg.com/bola.net/library/upload/21/2022/05/645x430/liverpool-juara-fa-c_452fcaf.jpg"),
+                      image: AssetImage("images/champ-liverpool.jpg"),
                     ),
                     Container(
                       padding: const EdgeInsets.fromLTRB(0, 10, 0, 10),
                       child: const Text(
-                        "Liverpool tahun lalu, yok bisa yok bangkit tahun ini!",
+                        "Liverpool musim lalu, yok bisa yok bangkit tahun ini!",
                         textAlign: TextAlign.center,
                         style: TextStyle(
                             fontSize: 25, fontWeight: FontWeight.bold),
@@ -158,7 +160,7 @@ class Tugas2 extends StatelessWidget {
                         ),
                         Expanded(
                           child: Container(
-                            margin: const EdgeInsets.only(left: 10),
+                            padding: const EdgeInsets.fromLTRB(10, 0, 0, 10),
                             child: const Text(
                                 "Kekalahan Chelsea, membuat pusing si Graham Potter"),
                           ),
@@ -192,12 +194,11 @@ class Tugas2 extends StatelessWidget {
                     Row(
                       children: [
                         Expanded(
-                          child: Image.network(
-                              "https://img.okezone.com/content/2022/08/07/45/2643320/meski-gagal-bantu-liverpool-menang-darwin-nunez-justru-sukses-cetak-sejarah-QeKcWdqEH6.JPG"),
+                          child: Image.asset("images/nunez.jfif"),
                         ),
                         Expanded(
                           child: Container(
-                            margin: const EdgeInsets.only(left: 10),
+                            padding: const EdgeInsets.fromLTRB(10, 0, 0, 10),
                             child: const Text(
                                 "Liverpool dapatkan Nunez! Siap tsunami trofi"),
                           ),
